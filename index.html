@@ -3,210 +3,248 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BER Upgrade Strategy – 1950s Detached Home</title>
+<title>Energy Retrofit Master Plan | F to A Strategy</title>
 
 <style>
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        margin: 0;
-        background-color: #f3f4f6;
-        color: #111827;
-        line-height: 1.6;
-    }
+:root {
+    --primary: #0f172a;
+    --accent: #2563eb;
+    --light-bg: #f8fafc;
+    --card-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
 
-    header {
-        background: linear-gradient(135deg, #1f2937, #374151);
-        color: white;
-        padding: 50px 20px;
-        text-align: center;
-    }
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--light-bg);
+    color: #111827;
+    line-height: 1.6;
+}
 
-    header h1 {
-        margin: 0;
-        font-size: 2rem;
-    }
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding: 120px 20px 100px 20px;
+    text-align: center;
+}
 
-    header p {
-        margin-top: 12px;
-        opacity: 0.9;
-    }
+.hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
 
-    .container {
-        max-width: 900px;
-        margin: auto;
-        padding: 30px 20px;
-    }
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
 
-    .card {
-        background: white;
-        padding: 28px;
-        margin-bottom: 24px;
-        border-radius: 12px;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-    }
+.hero .badge {
+    margin-top: 30px;
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
 
-    h2 {
-        margin-top: 0;
-        font-size: 1.5rem;
-        border-bottom: 2px solid #e5e7eb;
-        padding-bottom: 8px;
-    }
+/* CONTENT */
+.container {
+    max-width: 1000px;
+    margin: -60px auto 0 auto;
+    padding: 0 20px 60px 20px;
+}
 
-    h3 {
-        margin-bottom: 8px;
-        margin-top: 24px;
-        font-size: 1.1rem;
-    }
+.card {
+    background: white;
+    border-radius: 14px;
+    padding: 35px;
+    margin-bottom: 30px;
+    box-shadow: var(--card-shadow);
+}
 
-    ul, ol {
-        padding-left: 20px;
-    }
+h2 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 10px;
+}
 
-    .goal {
-        background-color: #e0f2fe;
-        border-left: 5px solid #0284c7;
-        padding: 18px;
-        border-radius: 8px;
-        margin-top: 15px;
-    }
+h3 {
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
 
-    .priority {
-        background-color: #eef2ff;
-        border-left: 5px solid #4f46e5;
-        padding: 15px;
-        border-radius: 8px;
-        margin-top: 12px;
-    }
+ul, ol {
+    padding-left: 20px;
+}
 
-    footer {
-        text-align: center;
-        padding: 30px;
-        font-size: 0.9rem;
-        color: #6b7280;
-    }
+.highlight {
+    background: #eef2ff;
+    border-left: 5px solid var(--accent);
+    padding: 18px;
+    border-radius: 8px;
+    margin-top: 18px;
+    font-weight: 500;
+}
 
-    @media (max-width: 600px) {
-        header h1 {
-            font-size: 1.5rem;
-        }
-        .card {
-            padding: 20px;
-        }
-    }
+.metric-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
 
-    @media print {
-        body {
-            background: white;
-        }
-        .card {
-            box-shadow: none;
-        }
-        header {
-            padding: 20px;
-        }
-    }
+.metric {
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
 
+.metric h4 {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.metric p {
+    margin: 8px 0 0 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+@media (max-width: 600px) {
+    .hero h1 { font-size: 1.8rem; }
+    .card { padding: 25px; }
+}
+
+@media print {
+    body { background: white; }
+    .card { box-shadow: none; }
+    .hero { padding: 40px 20px; }
+}
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Home Energy Upgrade Project</h1>
-    <p>1950s Detached | 121m² | Current BER: F | Gas Heating</p>
-</header>
+<section class="hero">
+    <h1>Energy Retrofit Master Plan</h1>
+    <p>
+        Strategic pathway to transform a 1960 detached home from F-rated performance 
+        to A-range efficiency through fabric upgrades, heat pump readiness, 
+        and integrated renewable energy.
+    </p>
+    <div class="badge">
+        Current BER: F | Target: A Range | Location: Kilkenny
+    </div>
+</section>
 
 <div class="container">
 
-    <div class="card">
-        <h2>Overall Project Goal</h2>
-        <div class="goal">
-            Achieve the highest possible BER rating by making the house fully heat-pump ready, integrating solar PV generation, and upgrading thermal performance (including 40-year-old windows).  
-            <br><br>
-            Primary objective: Transition from F rating to B1/A range through staged, strategic upgrades.
-        </div>
+<div class="card">
+<h2>Executive Summary</h2>
+<p>
+This project aims to maximise the energy performance of the property by reducing the Heat Loss Indicator (HLI), transitioning to a heat pump system, upgrading legacy glazing, and integrating solar PV. 
+The standard advisory pathway projects a B1 rating; this plan seeks to exceed that baseline and position the dwelling for A-level performance.
+</p>
+
+<div class="metric-grid">
+    <div class="metric">
+        <h4>Current BER</h4>
+        <p>F</p>
     </div>
-
-    <div class="card">
-        <h2>Strategic Priorities</h2>
-        <ol>
-            <li>Reduce heat loss through insulation and airtightness.</li>
-            <li>Make property compliant for heat pump installation.</li>
-            <li>Replace outdated windows (40 years old) to improve efficiency.</li>
-            <li>Integrate solar PV to maximise final BER rating.</li>
-        </ol>
+    <div class="metric">
+        <h4>Primary Energy</h4>
+        <p>414.97 kWh/m²/yr</p>
     </div>
-
-    <div class="card">
-        <h2>Key Requests for Assessor</h2>
-
-        <h3>1. Heat Pump Readiness Assessment (Critical)</h3>
-        <ul>
-            <li>Confirm required heat loss indicator (HLI) threshold.</li>
-            <li>Identify insulation upgrades necessary to qualify.</li>
-            <li>Evaluate suitability for gas boiler replacement.</li>
-        </ul>
-        <div class="priority">
-            Direct Question: “What must be completed to make this house fully heat-pump ready?”
-        </div>
-
-        <h3>2. Attic Insulation Upgrade</h3>
-        <ul>
-            <li>Increase to minimum 300mm+</li>
-            <li>Ensure complete coverage and reduced thermal bridging</li>
-        </ul>
-
-        <h3>3. External Wall Insulation Review</h3>
-        <ul>
-            <li>Evaluate despite previous cavity fill</li>
-            <li>Assess BER impact and cost-effectiveness</li>
-        </ul>
-
-        <h3>4. Window Replacement</h3>
-        <ul>
-            <li>Replace 40-year-old glazing with high-performance double/triple glazing</li>
-            <li>Improve airtightness and reduce draughts</li>
-            <li>Confirm BER impact of window upgrade</li>
-        </ul>
-
-        <h3>5. Airtightness & Ventilation</h3>
-        <ul>
-            <li>Draught proofing measures</li>
-            <li>Ventilation upgrades to support heat pump efficiency</li>
-        </ul>
-
-        <h3>6. Solar PV Integration</h3>
-        <ul>
-            <li>Confirm roof suitability (orientation & shading)</li>
-            <li>Determine PV system size needed to achieve A rating</li>
-        </ul>
-
+    <div class="metric">
+        <h4>Current HLI</h4>
+        <p>5.344 W/(K·m²)</p>
     </div>
-
-    <div class="card">
-        <h2>Projected BER Pathway</h2>
-        <ul>
-            <li><strong>Insulation Only:</strong> F → C1/B3</li>
-            <li><strong>Insulation + Heat Pump:</strong> Likely B1/B2</li>
-            <li><strong>Add Solar PV:</strong> Potential A3/A2</li>
-        </ul>
+    <div class="metric">
+        <h4>Advisory Potential</h4>
+        <p>B1</p>
     </div>
+</div>
+</div>
 
-    <div class="card">
-        <h2>Implementation Plan</h2>
-        <ol>
-            <li>Complete all funded insulation upgrades.</li>
-            <li>Achieve heat pump qualification threshold.</li>
-            <li>Install heat pump system.</li>
-            <li>Replace windows.</li>
-            <li>Add solar PV to maximise final BER.</li>
-        </ol>
-    </div>
+<div class="card">
+<h2>Strategic Objective</h2>
+<ul>
+<li>Reduce HLI below 2.0 for optimal heat pump efficiency</li>
+<li>Replace 40-year-old glazing with high-performance units</li>
+<li>Upgrade insulation beyond minimum thresholds where viable</li>
+<li>Install air-to-water heat pump</li>
+<li>Add solar PV to push final BER into A range</li>
+</ul>
+
+<div class="highlight">
+Primary Goal: Achieve heat pump readiness through deep fabric improvement and maximise Renewable Energy Ratio via solar integration.
+</div>
+</div>
+
+<div class="card">
+<h2>Priority Discussion Points for Assessor</h2>
+
+<h3>1. HLI Reduction Strategy</h3>
+<ul>
+<li>What additional measures reduce HLI from projected 2.548 to below 2.0?</li>
+<li>Is enhanced external wall insulation feasible?</li>
+</ul>
+
+<h3>2. Heat Pump Qualification</h3>
+<ul>
+<li>Confirm grant eligibility criteria</li>
+<li>Assess radiator sizing & system compatibility</li>
+<li>Review ventilation compliance</li>
+</ul>
+
+<h3>3. Window Replacement Impact</h3>
+<ul>
+<li>Target U-value 1.2–1.4 or better</li>
+<li>Assess triple glazing cost-benefit</li>
+<li>Confirm BER uplift contribution</li>
+</ul>
+
+<h3>4. Solar PV Pathway</h3>
+<ul>
+<li>Determine kWp required for A3/A2 rating</li>
+<li>Assess Renewable Energy Ratio improvement</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>Implementation Roadmap</h2>
+<ol>
+<li>Complete full insulation upgrades</li>
+<li>Upgrade glazing</li>
+<li>Achieve HLI threshold</li>
+<li>Install heat pump</li>
+<li>Deploy solar PV system</li>
+<li>Reassess BER and optimise</li>
+</ol>
+</div>
 
 </div>
 
 <footer>
-    Energy Upgrade Strategy Document | Prepared for BER Assessment Consultation
+Energy Retrofit Strategy Document | Prepared for BER Consultation Review
 </footer>
 
 </body>
